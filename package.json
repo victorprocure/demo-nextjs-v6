@@ -1,0 +1,17 @@
+{
+  "name": "explore-nextjs-v6",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRobBrennan/explore-nextjs-v6.git"
+  },
+  "author": "Rob Brennan <rob@therobbrennan.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheRobBrennan/explore-nextjs-v6/issues"
+  },
+  "homepage": "https://github.com/TheRobBrennan/explore-nextjs-v6#readme"
+}
