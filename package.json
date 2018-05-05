@@ -1,7 +1,7 @@
 {
-  "name": "explore-nextjs-v6",
+  "name": "demo-nextjs-v6",
   "version": "0.1.0",
-  "description": "A sample project for exploring NextJS v6.",
+  "description": "Demo project to explore NextJS v6.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheRobBrennan/explore-nextjs-v6.git"
+    "url": "git+https://github.com/TheRobBrennan/demo-nextjs-v6.git"
   },
   "author": "Rob Brennan <rob@therobbrennan.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TheRobBrennan/explore-nextjs-v6/issues"
+    "url": "https://github.com/TheRobBrennan/demo-nextjs-v6/issues"
   },
-  "homepage": "https://github.com/TheRobBrennan/explore-nextjs-v6#readme",
+  "homepage": "https://github.com/TheRobBrennan/demo-nextjs-v6#readme",
   "dependencies": {
     "next": "^6.0.0",
     "react": "^16.3.2",
