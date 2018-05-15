@@ -26,8 +26,18 @@ TIP: If you would like to run your application on a port other than the default 
 
 Your development server will constantly reload as changes are made to your app.
 
-# Key feature
+# Key features
 One of the key features of this demo is that it incorporates a back-end [ExpressJS](http://expressjs.com) server for handling custom server routes and server-side rendering (SSR).
+
+This project also includes a helper script that will enable you to interactively explore what is contained within your production app. Simply run:
+
+```sh
+$ npm run analyze
+```
+
+This will generate an interactive tool to see what the generated bundles for your app contain:
+![Bundle Analysis](static/analyze.png)
+
 
 ## ExpressJS server
 This demo uses a lightweight ExpressJS server - `server.js` - to demonstrate how to:
