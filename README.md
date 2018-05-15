@@ -74,6 +74,10 @@ As of this writing, you do not have to download or use Docker to run this projec
 
     $ npm run docker:up
 
+TIP: If you want to explicitly force a clean build of the Docker images and containers for this project, you can run:
+
+    $ npm run docker:up:clean
+
 To verify the server is running, you should be able to see a response from [http://localhost:3000](http://localhost:3000) to verify the application is running.
 
 Once you have finished with your work - or if you would like to stop the project from running:
@@ -91,6 +95,3 @@ You can run these with:
     - This is the nuclear weapon. This command will delete **ALL** of your containers and images GLOBALLY. 
     
     **If you are using Docker with other projects on your machine, this command will nuke those, too!**
-
-+ docker:up:clean
-    - This forces a clean build of the Docker images and containers.
