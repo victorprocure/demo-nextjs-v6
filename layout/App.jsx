@@ -10,6 +10,16 @@ export default ({ children }) => {
       <Link as={`/people/developers/rob`} href={`/ping?slug=developers&name=rob`}><a>Rob</a></Link>&nbsp;
 
       {children}
+      <style>{`
+      /* Sample inline styles */
+      a, a:visited, a:active {
+        color: inherit
+      }
+      a:hover {
+        color: #8B008B
+      }
+    `}
+    </style>
     </div>
   )
 }
