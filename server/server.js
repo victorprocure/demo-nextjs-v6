@@ -58,3 +58,8 @@ app.prepare().then(() => {
     console.log(`Server is listening on port ${port}`)
   })
 })
+
+process.on('SIGINT', () => {
+  console.log(`\nShutting down the server...Goodbye.\n`)
+  process.exit()
+})
