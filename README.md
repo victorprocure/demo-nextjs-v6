@@ -26,6 +26,71 @@ TIP: If you would like to run your application on a port other than the default 
 
 Your development server will constantly reload as changes are made to your app.
 
+# Key features
+There are a few key things that I wanted to achieve with this demo:
+
++ Incorporate a back-end [ExpressJS](http://expressjs.com) server for handling custom server routes
+
+## ExpressJS server
+This demo uses a lightweight ExpressJS server - `server.js` - to demonstrate how to:
+
++ Create an endpoint (for an API, as an example) that does not use NextJS
++ Server-side render (SSR) NextJS pages
++ Server side render (SSR) custom route/paths with NextJS
+
+### Endpoint that does not use NextJS
+#### /test
+This example path is a route that our NextJS app knows absolutely nothing about. It is purely handled by our Express server. You can ping this route to verify that the server is available.
+
+### Server side rendering (SSR) for NextJS pages
+#### /ping
+This is simple server side rendering (SSR) for the `ping.jsx` page
+
+### Server side rendering (SSR) for custom routes
+This example uses the `ping.jsx` as the page we want to render when handling custom routes.
+
+#### Client configuration
+In `layout/App.jsx` notice that we have the following code block:
+
+```sh
+      <Link as={`/people`} href={`/ping`}><a>People</a></Link>&nbsp;
+      <Link as={`/people/developers`} href={`/ping?slug=developers`}><a>Developers</a></Link>&nbsp;
+      <Link as={`/people/developers/rob`} href={`/ping?slug=developers&name=rob`}><a>Rob</a></Link>&nbsp;
+```
+
+This tells NextJS that these links will render the `ping.jsx` page, but that we want the URLs to appear as `/people/...` and not just a link to `/ping?slug=developers&name=rob`.
+
+This setup will work fine on the client side...until they try to access the `/people/...` route directly or refresh the web page. To get that to work, we need to modify our lightweight server to explicitly handle those routes.
+
+#### Server configuration
+Notice that in our `./server/server.js` file we have the following block of code:
+
+```sh
+    server.get('/people', (req, res) => {
+      const actualPage = '/ping'
+      const queryParams = { }
+      app.render(req, res, actualPage, queryParams)
+    })
+
+    server.get('/people/:slug', (req, res) => {
+      const actualPage = '/ping'
+      const queryParams = { slug: req.params.slug, name: req.params.name }
+      app.render(req, res, actualPage, queryParams)
+    })
+
+    server.get('/people/:slug/:name', (req, res) => {
+      const actualPage = '/ping'
+      const queryParams = { slug: req.params.slug, name: req.params.name }
+      app.render(req, res, actualPage, queryParams)
+    })
+```
+
+All three of these custom routes render the `ping.jsx` page with the appropriate parameters passed in. This means the user will be able to navigate to the following example URLs in their browser OR by forcing a hard refresh on the server:
+
++ /people
++ /people/developers
++ /people/developers/rob
+
 # Deployment
 One goal of this project will be to explore the cloud hosting service provided by Zeit - the creators of NextJS.
 
