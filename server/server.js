@@ -51,5 +51,6 @@ app.prepare().then(() => {
     if (err) {
       throw err
     }
+    console.log(`Server is listening on port ${port}`)
   })
 })
