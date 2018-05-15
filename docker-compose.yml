@@ -2,7 +2,9 @@ version: '3'
 
 services:
   'nextjs-ui':
-    build: ./
+    build:
+      context: ./
+      dockerfile: ./server/Dockerfile
     container_name: 'nextjs-ui'
     ports:
       - "3000:3000"
