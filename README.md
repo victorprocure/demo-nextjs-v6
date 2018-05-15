@@ -91,7 +91,9 @@ You can run these with:
     - This script will delete all of your Docker containers. If there is data not mapped locally, it **will be deleted**.
 
 + docker:nuke
-    - This is the nuclear weapon. This command will delete **ALL** of your containers and images GLOBALLY. If you are using Docker with other projects on your machine, this command will nuke those, too!
+    - This is the nuclear weapon. This command will delete **ALL** of your containers and images GLOBALLY. 
+    
+    **If you are using Docker with other projects on your machine, this command will nuke those, too!**
 
 + docker:up:clean
     - This forces a clean build of the Docker images and containers.
