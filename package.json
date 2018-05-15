@@ -1,7 +1,7 @@
 {
   "name": "demo-nextjs-v6",
   "version": "0.1.0",
-  "description": "Demo project to explore NextJS v6",
+  "description": "Demo project to explore NextJS v6 with custom server side rendering (SSR), Jest/Enzyme testing, code coverage reporting, and the webpack bundle analyzer.",
   "engines": {
     "node": "8.11.1",
     "npm": "5.6.0"
