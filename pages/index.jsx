@@ -9,13 +9,6 @@ export default () => (
     </div>
     <style>{`
       /* Sample inline styles */
-      a, a:visited, a:active {
-        color: inherit
-      }
-      a:hover {
-        color: #8B008B
-      }
-
       .heading {
         font-size: 50px
       }
