@@ -12,6 +12,7 @@
     "prebuild": "rm -rf .next/",
     "build": "next build",
     "postbuild": "cp -r static .next/",
+    "prestart": "npm run build",
     "start": "NODE_ENV=production node server/server.js -p $PORT",
     "deploy": "npm run deploy:now",
     "deploy:now": "now --public",
