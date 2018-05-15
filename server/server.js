@@ -1,5 +1,6 @@
 const express = require("express")
 const next = require("next")
+const morgan = require("morgan")
 
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== "production"
@@ -8,6 +9,9 @@ const handle = app.getRequestHandler()
 
 app.prepare().then(() => {
   const server = express()
+
+  // Middleware
+  server.use(morgan('short'))
 
   server.get("/people", (req, res) => {
     const actualPage = "/ping"
