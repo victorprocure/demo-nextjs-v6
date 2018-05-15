@@ -67,3 +67,31 @@ You should see output similar to:
 Zeit Now will give each deployment its own URL. In the above example, we can visit our application at [https://demo-nextjs-v6-omwahwlyce.now.sh](https://demo-nextjs-v6-omwahwlyce.now.sh)
 
 For more information, please see the [Five Minute Guide](https://zeit.co/docs) for an overview on deploying to [Zeit Now](https://zeit.co/dashboard).
+
+# Third party services
+## Docker
+As of this writing, you do not have to download or use Docker to run this project. However, if you have [Docker](https://www.docker.com) installed and configured on your development machine, you can spin up the project by running:
+
+    $ npm run docker:up
+
+TIP: If you want to explicitly force a clean build of the Docker images and containers for this project, you can run:
+
+    $ npm run docker:up:clean
+
+To verify the server is running, you should be able to see a response from [http://localhost:3000](http://localhost:3000) to verify the application is running.
+
+Once you have finished with your work - or if you would like to stop the project from running:
+
+    $ npm run docker:down
+
+### BONUS: Docker scripts
+I've included additional scripts that have been useful when working with Docker in previous projects.
+
+You can run these with:
+
+    $ npm run <script>
+
++ docker:nuke
+    - This is the nuclear weapon. This command will delete **ALL** of your containers and images GLOBALLY. 
+    
+    **If you are using Docker with other projects on your machine, this command will nuke those, too!**

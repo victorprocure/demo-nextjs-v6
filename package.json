@@ -1,14 +1,22 @@
 {
   "name": "demo-nextjs-v6",
   "version": "0.1.0",
-  "description": "Demo project to explore NextJS v6.",
+  "description": "Demo project to explore NextJS v6",
+  "engines": {
+    "node": "8.11.1",
+    "npm": "5.6.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "deploy": "npm run deploy:now",
-    "deploy:now": "now --public"
+    "deploy:now": "now --public",
+    "docker:up": "docker-compose up -d && docker-compose logs -f",
+    "docker:up:clean": "docker-compose up --build -d && docker-compose logs -f",
+    "docker:down": "docker-compose down",
+    "docker:nuke": "docker rmi -f $(docker images -q)"
   },
   "repository": {
     "type": "git",
