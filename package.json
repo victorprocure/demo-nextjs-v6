@@ -8,9 +8,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
+    "dev": "npm run build && NODE_ENV=development node server/server.js -p $PORT",
+    "prebuild": "rm -rf .next/",
     "build": "next build",
-    "start": "next start",
+    "postbuild": "cp -r static .next/",
+    "start": "NODE_ENV=production node server/server.js -p $PORT",
     "deploy": "npm run deploy:now",
     "deploy:now": "now --public",
     "docker:up": "docker-compose up -d && docker-compose logs -f",
@@ -24,11 +26,13 @@
   },
   "author": "Rob Brennan <rob@therobbrennan.com>",
   "license": "ISC",
+  "copyright": "Copyright 2018 Rob Brennan. All rights reserved.",
   "bugs": {
     "url": "https://github.com/TheRobBrennan/demo-nextjs-v6/issues"
   },
   "homepage": "https://github.com/TheRobBrennan/demo-nextjs-v6#readme",
   "dependencies": {
+    "express": "^4.16.3",
     "next": "^6.0.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
