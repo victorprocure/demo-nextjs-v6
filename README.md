@@ -26,10 +26,8 @@ TIP: If you would like to run your application on a port other than the default 
 
 Your development server will constantly reload as changes are made to your app.
 
-# Key features
-There are a few key things that I wanted to achieve with this demo:
-
-+ Incorporate a back-end [ExpressJS](http://expressjs.com) server for handling custom server routes
+# Key feature
+One of the key features of this demo is that it incorporates a back-end [ExpressJS](http://expressjs.com) server for handling custom server routes and server-side rendering (SSR).
 
 ## ExpressJS server
 This demo uses a lightweight ExpressJS server - `server.js` - to demonstrate how to:
