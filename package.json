@@ -7,7 +7,12 @@
     "npm": "5.6.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/jest --no-cache",
+    "test:debug": "./node_modules/.bin/jest --debug",
+    "test:verbose": "./node_modules/.bin/jest --verbose",
+    "test:watch": "./node_modules/.bin/jest --watch",
+    "test:coverage": "npm test -- --coverage --no-cache",
+    "test:coverage:view": "npm test -- --coverage --no-cache && open coverage/lcov-report/index.html",
     "dev": "npm run build && NODE_ENV=development node server/server.js -p $PORT",
     "prebuild": "rm -rf .next/",
     "build": "next build",
@@ -39,5 +44,10 @@
     "next": "^6.0.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3"
   }
 }
