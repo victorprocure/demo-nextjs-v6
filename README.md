@@ -147,32 +147,24 @@ To deploy this application to Zeit Now, you can run:
 You should see output similar to:
 ```
 > Deploying ~/repos/demo-nextjs-v6 under therobbrennan
-> Using Node.js 8.11.1 (default)
-> https://demo-nextjs-v6-omwahwlyce.now.sh [in clipboard] (sfo1) [2s]
-> Synced 2 files (2.49KB) [2s]
+> Using Node.js 8.11.1 (requested: `8.11.1`)
+> https://demo-nextjs-v6-lklggktgoj.now.sh [in clipboard] (sfo1) [5s]
+> Synced 10 files (608.82KB) [5s]
 > Building…
 > ▲ npm install
-> ✓ Using "package-lock.json"
-> ⧗ Installing 3 main dependencies…
-> ✓ Installed 749 modules [7s]
-> ▲ npm run build
-> 
-> demo-nextjs-v6@0.1.0 build /home/nowuser/src
-> next build
-> 
-> ▲ Snapshotting deployment
-> ▲ Saving deployment image (10.8M)
-> Build completed
-> Verifying instantiation in sfo1
+................................
+*** All kinds of output here ***
+................................
 > [0] 
 > [0] demo-nextjs-v6@0.1.0 start /home/nowuser/src
-> [0] next start
+> [0] NODE_ENV=production node server/server.js -p $PORT
 > [0] 
-> ✔ Scaled 1 instance in sfo1 [13s]
+> [0] Server is listening on port 3000
+> ✔ Scaled 1 instance in sfo1 [59s]
 > Success! Deployment ready
 ```
 
-Zeit Now will give each deployment its own URL. In the above example, we can visit our application at [https://demo-nextjs-v6-omwahwlyce.now.sh](https://demo-nextjs-v6-omwahwlyce.now.sh)
+Zeit Now will give each deployment its own URL. In the above example, we can visit our application at [https://demo-nextjs-v6-lklggktgoj.now.sh](https://demo-nextjs-v6-lklggktgoj.now.sh)
 
 For more information, please see the [Five Minute Guide](https://zeit.co/docs) for an overview on deploying to [Zeit Now](https://zeit.co/dashboard).
 
