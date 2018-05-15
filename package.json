@@ -16,7 +16,6 @@
     "docker:up": "docker-compose up -d && docker-compose logs -f",
     "docker:up:clean": "docker-compose up --build -d && docker-compose logs -f",
     "docker:down": "docker-compose down",
-    "docker:destroy": "docker kill $(docker ps -q)",
     "docker:nuke": "docker rmi -f $(docker images -q)"
   },
   "repository": {

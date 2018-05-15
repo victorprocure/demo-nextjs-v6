@@ -87,9 +87,6 @@ You can run these with:
 
     $ npm run <script>
 
-+ docker:destroy
-    - This script will delete all of your Docker containers. If there is data not mapped locally, it **will be deleted**.
-
 + docker:nuke
     - This is the nuclear weapon. This command will delete **ALL** of your containers and images GLOBALLY. 
     
