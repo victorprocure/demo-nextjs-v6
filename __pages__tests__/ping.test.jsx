@@ -1,5 +1,5 @@
 import { mount } from "enzyme"
-import Component from "./ping"
+import Component from "../pages/ping"
 
 describe("The Ping page", () => {
   it("should render", () => {
