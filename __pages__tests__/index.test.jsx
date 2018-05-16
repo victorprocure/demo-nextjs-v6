@@ -1,5 +1,5 @@
 import { mount } from "enzyme"
-import Index from "./index"
+import Index from "../pages/index"
 
 describe("The default page", () => {
   it("should render", () => {

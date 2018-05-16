@@ -36,7 +36,8 @@ $ npm run analyze
 ```
 
 This will generate an interactive tool to see what the generated bundles for your app contain:
-![Bundle Analysis](static/analyze.png)
+![Bundle Analysis](static/analyze-1.png)
+![Bundle Analysis](static/analyze-2.png)
 
 
 ## ExpressJS server
