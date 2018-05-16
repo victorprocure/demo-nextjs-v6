@@ -1,9 +1,20 @@
 # Welcome
-This is a simple demo to explore [NextJS v6](https://nextjs.org).
+This is a simple demo to explore NextJS v6 with support for:
++ [Jest](https://facebook.github.io/jest/) / [Enzyme](http://airbnb.io/enzyme/)
++ [Redux](https://redux.js.org) (1)
+    - [Redux DevTools](https://github.com/zalmoxisus/redux-devtools-extension)
+        + Currently supports viewing and debugging your Redux store in
+            - Chrome
+            - Firefox
+            - Electron
+        + Please see [remote-redux-devtools](https://github.com/zalmoxisus/remote-redux-devtools) for other browsers/environments
++ [Webpack](https://webpack.js.org)
+
+(1) - The `master` branch of this project **does not include** Redux. If you would like to explore my Redux demo code, please checkout branch `nextjs-with-redux` instead.
 
 My initial goal is to start with a clean slate and see how new features and functionality in [NextJS v6](https://nextjs.org) can be incorporated.
 
-Ultimately, I would like to see this project have parity with my previous NextJS 5 demos - [demo-nextjs-v5-without-typescript](https://github.com/TheRobBrennan/demo-nextjs-v5-without-typescript) and [demo-nextjs-v5](https://github.com/TheRobBrennan/demo-nextjs-v5). 
+If you would like to see work from my previous NextJS 5 demos, please visit [demo-nextjs-v5-without-typescript](https://github.com/TheRobBrennan/demo-nextjs-v5-without-typescript) and/or [demo-nextjs-v5](https://github.com/TheRobBrennan/demo-nextjs-v5).
 
 # Getting started
 ## Initial setup and installation
@@ -27,7 +38,15 @@ TIP: If you would like to run your application on a port other than the default 
 Your development server will constantly reload as changes are made to your app.
 
 # Key features
-One of the key features of this demo is that it incorporates a back-end [ExpressJS](http://expressjs.com) server for handling custom server routes and server-side rendering (SSR).
+There are a few key things that I wanted to achieve with this demo:
+
++ Incorporate NextJS 6 with Redux (1)
+    - Incorporate Redux DevTools for viewing and debugging the Redux store
++ Incorporate Jest and Enzyme for testing the application
+    - My original goal was to have as much test coverage as REASONABLY POSSIBLE
++ Incorporate a back-end [ExpressJS](http://expressjs.com) server for handling custom server routes
+
+(1) - The `master` branch of this project **does not include** Redux. If you would like to explore my Redux demo code, please checkout branch `nextjs-with-redux` instead.
 
 This project also includes a helper script that will enable you to interactively explore what is contained within your production app. Simply run:
 
