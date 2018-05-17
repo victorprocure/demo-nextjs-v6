@@ -8,9 +8,12 @@ This is a simple demo to explore NextJS v6 with support for:
             - Firefox
             - Electron
         + Please see [remote-redux-devtools](https://github.com/zalmoxisus/remote-redux-devtools) for other browsers/environments
++ [TypeScript](https://www.typescriptlang.org) (2)
 + [Webpack](https://webpack.js.org)
 
 (1) - The `master` branch of this project **does not include** Redux. If you would like to explore my Redux demo code, please checkout branch `nextjs-with-redux` instead.
+
+(2) - The `master` branch of this project **does not include** TypeScript. If you would like to explore my TypeScript demo code, please checkout branch `nextjs-with-typescript` instead.
 
 My initial goal is to start with a clean slate and see how new features and functionality in [NextJS v6](https://nextjs.org) can be incorporated.
 
@@ -40,13 +43,15 @@ Your development server will constantly reload as changes are made to your app.
 # Key features
 There are a few key things that I wanted to achieve with this demo:
 
-+ Incorporate NextJS 6 with Redux (1)
++ Incorporate NextJS 6 with Redux (1) and TypeScript (2)
     - Incorporate Redux DevTools for viewing and debugging the Redux store
 + Incorporate Jest and Enzyme for testing the application
     - My original goal was to have as much test coverage as REASONABLY POSSIBLE
 + Incorporate a back-end [ExpressJS](http://expressjs.com) server for handling custom server routes
 
 (1) - The `master` branch of this project **does not include** Redux. If you would like to explore my Redux demo code, please checkout branch `nextjs-with-redux` instead.
+
+(2) - The `master` branch of this project **does not include** TypeScript. If you would like to explore my TypeScript demo code, please checkout branch `nextjs-with-typescript` instead.
 
 This project also includes a helper script that will enable you to interactively explore what is contained within your production app. Simply run:
 
