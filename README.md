@@ -18,6 +18,10 @@ This is a simple demo to explore NextJS v6 with support for:
 
 (3) - The `master` branch of this project **does not include** the Auth0 demo. If you would like to explore the Auth0 demo code, please checkout branch `nextjs-with-auth0` instead.
 
+If you are using [VS Code](https://code.visualstudio.com) as your editor, this project will allow you to debug the front-end NextJS UI, the back-end ExpressJS server, or both while your local server is running:
+![VS Code: Debug NextJS](static/vscode-debug-nextjs.png)
+![VS Code: Debug ExpressJS server](static/vscode-debug-expressjs.png)
+
 This project also includes a helper script that will enable you to interactively explore what is contained within your production app. Simply run:
 
 ```sh
