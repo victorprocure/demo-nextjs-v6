@@ -9,11 +9,14 @@ This is a simple demo to explore NextJS v6 with support for:
             - Electron
         + Please see [remote-redux-devtools](https://github.com/zalmoxisus/remote-redux-devtools) for other browsers/environments
 + [TypeScript](https://www.typescriptlang.org) (2)
++ [Auth0](https://auth0.com) (3)
 + [Webpack](https://webpack.js.org)
 
 (1) - The `master` branch of this project **does not include** Redux. If you would like to explore my Redux demo code, please checkout branch `nextjs-with-redux` instead.
 
 (2) - The `master` branch of this project **does not include** TypeScript. If you would like to explore my TypeScript demo code, please checkout branch `nextjs-with-typescript` instead.
+
+(3) - The `master` branch of this project **does not include** the Auth0 demo. If you would like to explore the Auth0 demo code, please checkout branch `nextjs-with-auth0` instead.
 
 My initial goal is to start with a clean slate and see how new features and functionality in [NextJS v6](https://nextjs.org) can be incorporated.
 
