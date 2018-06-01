@@ -19,17 +19,18 @@ app.prepare().then(() => {
     app.render(req, res, actualPage, queryParams)
   })
 
-  server.get("/people/:slug", (req, res) => {
-    const actualPage = "/ping"
-    const queryParams = { slug: req.params.slug, name: req.params.name }
-    app.render(req, res, actualPage, queryParams)
-  })
+  // EXAMPLE CODE: This is how you translate server side URLs into NextJS pages with parameters
+  // server.get("/people/:slug", (req, res) => {
+  //   const actualPage = "/ping"
+  //   const queryParams = { slug: req.params.slug, name: req.params.name }
+  //   app.render(req, res, actualPage, queryParams)
+  // })
 
-  server.get("/people/:slug/:name", (req, res) => {
-    const actualPage = "/ping"
-    const queryParams = { slug: req.params.slug, name: req.params.name }
-    app.render(req, res, actualPage, queryParams)
-  })
+  // server.get("/people/:slug/:name", (req, res) => {
+  //   const actualPage = "/ping"
+  //   const queryParams = { slug: req.params.slug, name: req.params.name }
+  //   app.render(req, res, actualPage, queryParams)
+  // })
 
   server.get("/ping", (req, res) => {
     // SSR for the /ping page in NextJS
