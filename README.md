@@ -223,3 +223,18 @@ You can run these with:
     - This is the nuclear weapon. This command will delete **ALL** of your containers and images GLOBALLY. 
     
     **If you are using Docker with other projects on your machine, this command will nuke those, too!**
+
+## Continuous Integration / Continuous Deployment (CI/CD)
+The initial CI/CD setup was inspired by [How to set up continuous integration and deployment for your React app](https://medium.freecodecamp.org/how-to-set-up-continuous-integration-and-deployment-for-your-react-app-d09ae4525250)
+
+Our initial setup will implement CI/CD with services from
++ [CircleCI](https://circleci.com/)
++ [CodeClimate](https://codeclimate.com/)
++ [Heroku](https://www.heroku.com/)
+
+Additional services we may want to incorporate
++ [Codacy](https://www.codacy.com/)
+
+### CircleCI
+### CodeClimate
+### Heroku
