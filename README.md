@@ -236,5 +236,6 @@ Additional services we may want to incorporate
 + [Codacy](https://www.codacy.com/)
 
 ### CircleCI
+
 ### CodeClimate
 ### Heroku
