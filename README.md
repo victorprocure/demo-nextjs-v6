@@ -231,7 +231,6 @@ Our initial setup will implement CI/CD with services from
 + [CircleCI](https://circleci.com/)
     - Free CI/CD for open source and publicly available projects
 + [CodeClimate](https://codeclimate.com/)
-+ [Heroku](https://www.heroku.com/)
 
 Additional services we may want to incorporate
 + [Codacy](https://www.codacy.com/)
