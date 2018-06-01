@@ -12,6 +12,10 @@ This is a simple demo to explore NextJS v6 with support for:
 + [Auth0](https://auth0.com) (3)
 + [Webpack](https://webpack.js.org)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/1658e95229e0313ad78c/maintainability)](https://codeclimate.com/github/TheRobBrennan/demo-nextjs-v6/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1658e95229e0313ad78c/test_coverage)](https://codeclimate.com/github/TheRobBrennan/demo-nextjs-v6/test_coverage)
+
+
 (1) - The `master` branch of this project **does not include** Redux. If you would like to explore my Redux demo code, please checkout branch `nextjs-with-redux` instead.
 
 (2) - The `master` branch of this project **does not include** TypeScript. If you would like to explore my TypeScript demo code, please checkout branch `nextjs-with-typescript` instead.
