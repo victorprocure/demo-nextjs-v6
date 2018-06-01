@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: image: circleci/node:8.11
+      - image: circleci/node:8.11
     steps:
       - checkout
       - restore_cache: # special step to restore the dependency cache
